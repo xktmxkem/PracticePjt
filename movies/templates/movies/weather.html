@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{weather.city}}</h2>
+<p>Current weather : {{weather.description}} <img src="http://openweathermap.org/img/w/{{ weather.icon }}.png" alt="Image">
+</p>
+
+{% for movie in movies %}
+<h2>{{movie.title}}</h2>
+<img src="{{movie.poster_path}}" alt="poster">
+{% endfor %}
+{% endblock content %}
+{% block script %}
+
+{% endblock script %}

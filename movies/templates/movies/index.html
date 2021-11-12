@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Home</h1>
+{% for movie in movies %}
+<h2>{{movie.title}}</h2>
+<img src="{{movie.poster_path}}" alt="">
+
+{% endfor %}
+
+{% endblock content %}
